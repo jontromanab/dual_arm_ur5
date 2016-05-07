@@ -1,0 +1,8 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: dual_arm_ur5_description
+    relative_path: Robot/dual_arm_ur5.xacro
+  SRDF:
+    relative_path: config/dual_arm_ur5.srdf
+  CONFIG:
+    generated_timestamp: 1455020733

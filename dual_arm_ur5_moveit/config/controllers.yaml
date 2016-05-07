@@ -1,0 +1,36 @@
+controller_list:
+  - name: right_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+      - r_shoulder_pan_joint
+      - r_shoulder_lift_joint
+      - r_elbow_joint
+      - r_wrist_1_joint
+      - r_wrist_2_joint
+      - r_wrist_3_joint
+
+  - name: left_arm_controller
+    action_ns: follow_joint_trajectory
+    type: FollowJointTrajectory
+    joints:
+      - l_shoulder_pan_joint
+      - l_shoulder_lift_joint
+      - l_elbow_joint
+      - l_wrist_1_joint
+      - l_wrist_2_joint
+      - l_wrist_3_joint
+
+  - name: right_gripper_action
+    type: GripperCommand
+    action_ns: gripper_action
+    default: true
+    joints:
+      - r_robotiq_85_left_knuckle_joint
+
+  - name: left_gripper_action
+    type: GripperCommand
+    action_ns: gripper_action
+    default: true
+    joints:
+      - l_robotiq_85_left_knuckle_joint
